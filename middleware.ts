@@ -1,3 +1,5 @@
+export const runtime = "nodejs"
+  
 import { createClient } from "@/lib/supabase/middleware"
 import { i18nRouter } from "next-i18n-router"
 import { NextResponse, type NextRequest } from "next/server"
@@ -44,6 +46,4 @@ export async function middleware(request: NextRequest) {
 export const config = {
   matcher: "/((?!api|static|.*\\..*|_next|auth).*)"
     
-export const runtime = "nodejs"
-
 }
